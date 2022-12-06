@@ -1,0 +1,31 @@
+.header {
+    border-bottom: 1px solid $border-header-stroke;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.header__main-nav {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /*  */
+    /* width: 1200px; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+
+   /*  @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        min-width: 1200px;
+    } */
+
+/* } */
+
+/* .nav {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+}  */

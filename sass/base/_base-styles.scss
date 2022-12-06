@@ -1,0 +1,45 @@
+body {
+    /*margin: 0; теж нормалізатора*/
+    background-color: $primary-white-color;
+    color: $primary-text-color;
+
+    font-family: $main-font-family, sans-serif;
+    /*font-style: normal;
+    font-weight: 400;*/
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    
+    min-width: 480px;
+    height: auto;
+
+
+   /*  @media screen and (min-width: 480px) {
+
+        
+    } */
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}

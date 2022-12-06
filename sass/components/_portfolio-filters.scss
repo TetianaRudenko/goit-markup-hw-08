@@ -1,0 +1,34 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    padding-left: 0;
+
+    margin-bottom: 50px;
+}
+
+.filters__item:not(:first-child) {
+    margin-left: 8px;
+}
+
+.filters__btn {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    color: $secondary-text-color;
+
+    transition: color $transition-duration $transition-timing-function,
+    background-color $transition-duration $transition-timing-function,
+    box-shadow $transition-duration $transition-timing-function;
+
+    &:hover, &:focus {
+        color: $primary-white-color;
+        background-color: $accent-color;
+        box-shadow: $box-shadow-portfolio-filter;
+    }
+
+}
