@@ -2,8 +2,6 @@
     display: block;
     align-items: center;
     
-
-
     color: $brand-color;
 
     font-family: $logo-font-family;
@@ -31,4 +29,9 @@
     margin-bottom: 20px;
 
     color: $primary-white-color;
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+    }
 }

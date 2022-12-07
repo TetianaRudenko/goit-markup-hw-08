@@ -1,24 +1,14 @@
 body {
-    /*margin: 0; теж нормалізатора*/
     background-color: $primary-white-color;
     color: $primary-text-color;
 
     font-family: $main-font-family, sans-serif;
-    /*font-style: normal;
-    font-weight: 400;*/
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     
     min-width: 480px;
     height: auto;
-
-
-   /*  @media screen and (min-width: 480px) {
-
-        
-    } */
-
 }
 
 h1,

@@ -19,8 +19,6 @@
     color: $secondary-text-color;
     transition: color $transition-duration $transition-timing-function;
 
-    /* text-decoration: none; */
-
     &:hover, &:focus, &--current {
         color: $accent-color;
     }
