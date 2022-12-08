@@ -16,33 +16,64 @@
 <body>
 
    <header class="header">
-      <div class="header__main-nav" >
+      <div class="header__main-nav ">
          <nav class="nav">
             <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
-            <ul class="site-nav">
-               <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
-               <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-               <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
-            </ul>
+            <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container" data-menu-btn>
+               <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                  <use class="menu-btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                  <use class="menu-btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
+               </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+               <ul class="site-nav">
+                  <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
+                  <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+                  <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
+               </ul>
+               <ul class="contact-nav">
+                  <li class="contact-nav__item">
+                     <a href="mailto:info@devstudio.com" class="contact-nav__link">
+                        <svg class="contact-nav__icon" width="16" height="12">
+                           <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                     </a>
+                  </li>
+                  <li class="contact-nav__item">
+                     <a href="tel:+380961111111" class="contact-nav__link contact-nav__link--tel">
+                        <svg class="contact-nav__icon" width="10" height="16">
+                           <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                     </a>
+                  </li>
+               </ul>
+               <ul class="social-set">
+                  <li class="social-set__item">
+                     <a href="#" class="social-set__link " aria-label="instagram">
+                        Instagram
+                     </a>
+                  </li>
+                  <li class="social-set__item">
+                     <a href="#" class="social-set__link" aria-label="twitter">
+                        Twitter
+                     </a>
+                  </li>
+                  <li class="social-set__item">
+                     <a href="#" class="social-set__link" aria-label="facebook">
+                        Facebook
+                     </a>
+                  </li>
+                  <li class="social-set__item">
+                     <a href="#" class="social-set__link" aria-label="linkedin">
+                        Linkedin
+                     </a>
+                  </li>
+               </ul>
+            </div>
          </nav>   
-         <ul class="contact-nav">
-            <li class="contact-nav__item">
-               <a href="mailto:info@devstudio.com" class="contact-nav__link">
-                  <svg class="contact-nav__icon" width="16" height="12">
-                     <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-               info@devstudio.com
-               </a>
-            </li>
-            <li class="contact-nav__item">
-               <a href="tel:+380961111111" class="contact-nav__link">
-                  <svg class="contact-nav__icon" width="10" height="16">
-                     <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-               +38 096 111 11 11
-               </a>
-            </li>
-         </ul> 
+         
       </div>
    </header>
 
@@ -109,19 +140,19 @@
          <h2 class="section__title">Чим ми займаємося</h2>       
             <ul class="introduction">
                <li class="introduction__item introduction__item--position">
-                  <img class="introduction__pic" src="./images/img1.jpg" alt="робочий стіл за яким програміст прописує код" width="370">
+                  <img class="introduction__pic" srcset="./images/img1-370.jpg 1x, ./images/img1-740.jpg 2x" src="./images/img1-370.jpg" alt="робочий стіл за яким програміст прописує код" width="370">
                   <div class="introduction__thumb">
                      <h3 class="introduction__title">Десктопні додатки</h3>
                   </div>
                </li>
                <li class="introduction__item introduction__item--position">
-                  <img class="introduction__pic" src="./images/img2.jpg" alt="на екрані ноутбука прототип додатку телефона, що тримає в лівій руці" width="370">
+                  <img class="introduction__pic" srcset="./images/img2-370.jpg 1x, ./images/img2-740.jpg 2x" src="./images/img2-370.jpg" alt="на екрані ноутбука прототип додатку телефона, що тримає в лівій руці" width="370">
                   <div class="introduction__thumb">
                      <h3 class="introduction__title">Мобільні додатки</h3>
                   </div>
                </li>
                <li class="introduction__item introduction__item--position">
-                  <img class="introduction__pic" src="./images/img3.jpg" alt="кольорова палітра на екрані планшету, який в лівій руці" width="370">
+                  <img class="introduction__pic" srcset="./images/img3-370.jpg 1x, ./images/img3-740.jpg 2x" src="./images/img3-370.jpg" alt="кольорова палітра на екрані планшету, який в лівій руці" width="370">
                   <div class="introduction__thumb">
                      <h3 class="introduction__title">Дизайнерські рішення</h3>
                   </div>
@@ -138,7 +169,7 @@
             <ul class="team">
                <li class="team__member">
                   <article class="employee">
-                     <img class="employee__pic" src="./images/avatar1.jpg" alt="молодик чорнявець в окулярах з бородою в коричневій сорочці" width="270">
+                     <img class="employee__pic" src="./images/avatar1-270.jpg" alt="молодик чорнявець в окулярах з бородою в коричневій сорочці" srcset="./images/avatar1-270.jpg 270w, ./images/avatar1-354.jpg 354w, ./images/avatar1-450.jpg 450w, ./images/avatar1-540.jpg 540w, ./images/avatar1-708.jpg 708w, ./images/avatar1-900.jpg 900w" sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
                      <div class="employee__descr"> 
                         <h3 class="employee__id">Ігор Дем'яненко</h3>
                         <p class="employee__position" lang="en">Product Designer</p>   
@@ -179,7 +210,7 @@
                
                <li class="team__member">
                   <article class="employee">
-                     <img class="employee__pic" src="./images/avatar2.jpg" alt="молода усміхнена жінка, білявка в окулярах, в чорному жакеті" width="270">
+                     <img class="employee__pic" src="./images/avatar2-270.jpg" alt="молода усміхнена жінка, білявка в окулярах, в чорному жакеті" srcset="./images/avatar2-270.jpg 270w, ./images/avatar2-354.jpg 354w, ./images/avatar2-450.jpg 450w, ./images/avatar2-540.jpg 540w, ./images/avatar2-708.jpg 708w, ./images/avatar2-900.jpg 900w" sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
                      <div class="employee__descr">
                         <h3 class="employee__id">Ольга Рєпіна</h3>
                         <p class="employee__position" lang="en">Frontend Developer</p>
@@ -220,7 +251,7 @@
                
                <li class="team__member">
                   <article class="employee">
-                     <img class="employee__pic" src="./images/avatar3.jpg" alt="усміхнений молодик в блакитній сорочці дивиться в сторону" width="270">
+                     <img class="employee__pic" src="./images/avatar3-270.jpg" alt="усміхнений молодик в блакитній сорочці дивиться в сторону" srcset="./images/avatar3-270.jpg 270w, ./images/avatar3-354.jpg 354w, ./images/avatar3-450.jpg 450w, ./images/avatar3-540.jpg 540w, ./images/avatar3-708.jpg 708w, ./images/avatar3-900.jpg 900w" sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
                      <div class="employee__descr">
                         <h3 class="employee__id">Микола Тарасов</h3>
                         <p class="employee__position" lang="en">Marketing</p>
@@ -261,7 +292,7 @@
                
                <li class="team__member">
                   <article class="employee"></article>
-                     <img class="employee__pic" src="./images/avatar4.jpg" alt="смуглявий чорнявець в окуляр з бородою та у чорній тенісці" width="270">
+                     <img class="employee__pic" src="./images/avatar4-270.jpg" alt="смуглявий чорнявець в окуляр з бородою та у чорній тенісці" srcset="./images/avatar4-270.jpg 270w, ./images/avatar4-354.jpg 354w, ./images/avatar4-450.jpg 450w, ./images/avatar4-540.jpg 540w, ./images/avatar4-708.jpg 708w, ./images/avatar4-900.jpg 900w" sizes="(min-width: $desktop) 25vw, (min-width: $tablet) 50vw, 100vw">
                      <div class="employee__descr">
                         <h3 class="employee__id">Михайло Єрмаков</h3>
                         <p class="employee__position" lang="en">UI Designer</p>
@@ -489,5 +520,6 @@
    </div>
    
    <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
 </body>
 </html>

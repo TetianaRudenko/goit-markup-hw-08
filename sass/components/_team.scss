@@ -1,34 +1,47 @@
 .team {
-    
+    padding: 0;
+    margin: 0;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
-    }
-}
-.team__member:not(:first-child) {
-    
-    @media screen and (min-width: 1200px) {
-    margin-left: 30px;
+        flex-wrap: wrap;
+        margin: -15px;
     }
 }
 
 .team__member {
-    margin-bottom: 30px;
-    max-width: 450px;
-
     background-color: $primary-white-color;
     box-shadow: $avatar-box-shadow;
     border-radius: $avatar-border-radius;
+    
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin: 15px;
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 15px;
+        flex-basis: calc((100% - 8 * 15px) / 4);
+        
+    }
 }
-/* .employee__pic {
-    max-width: 450px;
-} */
+
 .employee__descr {
 
-    padding: 24px 122px;
+    padding: 30px 122px 24px 122px;
     text-align: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $tablet) {
+        padding: 30px 74px 24px 74px;
+    }
+
+    @media screen and (min-width: $desktop) {
         padding: 30px 32px;
     }
 }

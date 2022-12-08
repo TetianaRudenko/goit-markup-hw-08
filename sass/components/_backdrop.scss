@@ -9,6 +9,11 @@
     visibility: visible;
     transition: opacity $transition-duration $transition-timing-function,
         visibility $transition-duration $transition-timing-function;
+
+    @media screen and (max-width: 767px) {
+        padding: 93px 15px;
+        overflow-y: scroll;
+    }
 }
 
 .is-hidden {

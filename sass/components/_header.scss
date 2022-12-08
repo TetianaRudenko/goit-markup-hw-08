@@ -1,7 +1,12 @@
 .header {
-    border-bottom: 1px solid $border-header-stroke;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
+
+    @media screen and (min-width: $tablet) {
+        border-bottom: 1px solid $border-header-stroke;
+    }
 }
 
 .header__main-nav {
@@ -10,22 +15,94 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
-    /*  */
-    /* width: 1200px; */
-    /* padding-left: 15px;
-    padding-right: 15px; */
 
-   /*  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
         align-items: center;
-        min-width: 1200px;
-    } */
-
-/* } */
-
-/* .nav {
-    @media screen and (min-width: 1200px) {
-    display: flex;
+        width: 768px;
     }
-}  */
+    
+    
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        width: 1200px;
+    } 
+
+} 
+
+.nav {
+    display: flex;
+    align-items: center;
+    
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        min-height: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
+} 
+
+ 
+
+.menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+
+    @media screen and (min-width: $tablet){
+        display: none;
+    }
+}
+
+.menu-btn__icon-cross {
+    display: none;
+
+    
+}
+
+
+.menu-btn.is-open .menu-btn__icon-cross {
+    display: block;
+
+}
+
+
+.menu-btn.is-open .menu-btn__icon-menu {
+    display: none;
+}
+
+
+.menu-container {
+    
+    background-color: $primary-white-color;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+        
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+
+        padding: 48px 83px 40px 48px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-grow: 1;
+    }
+ }
+
+ 
