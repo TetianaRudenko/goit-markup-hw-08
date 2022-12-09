@@ -1,10 +1,14 @@
 .modal {
     position: absolute;
-    top: 30px;
+    top: 30px; 
+    /* left: 50%; */ 
+    transform: translate(50%); 
+
+    /* top: 50%;
     left: 50%;
-
-    transform: translate (-50%);
-
+    transform: translate(-50%, -50%);
+ */
+    overflow-y: scroll;
     width: 450px;
     height: 609px;
     padding: 0;
@@ -12,6 +16,13 @@
     background-color: $primary-white-color;
     box-shadow: $modal-window-box-shadow;
     border-radius: $modal-window-border-radius;
+
+    @media screen and (min-width: $tablet) {
+        top: 50%;
+        left: 50%; 
+        
+        transform: translate(-50%, -50%); 
+    }
 
     @media screen and (min-width: $desktop) {
         width: 528px;

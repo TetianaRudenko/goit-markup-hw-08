@@ -1,8 +1,8 @@
 .header {
     
-   /*  @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         position: relative;
-    } */
+    }
 
     @media screen and (min-width: $tablet) {
         border-bottom: 1px solid $border-header-stroke;
@@ -39,7 +39,7 @@
     @media screen and (max-width: 767px) {
         justify-content: space-between;
         min-height: 60px;
-        position: relative;
+        /* position: relative; */
     }
 
     @media screen and (min-width: $desktop) {
@@ -58,6 +58,16 @@
     background-color: transparent;
     
 
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        transform: translate(-50%, -50%);
+        /* z-index: 2; */
+        fill: $secondary-text-color;
+        transition: fill $transition-duration $transition-timing-function;
+
+    }
     @media screen and (min-width: $tablet){
         display: none;
     }
@@ -66,16 +76,15 @@
 .menu-btn__icon-cross {
     display: none;
 
-    
-    
+    .menu-btn.is-open &:hover,
+    .menu-btn.is-open &:focus {
+        fill: $accent-color
+    }
 }
 
 
 .menu-btn.is-open .menu-btn__icon-cross {
     display: block;
-    position: absolute;
-        top: 0;
-        right: 0;
 }
 
 
@@ -87,7 +96,6 @@
 .menu-container {
     
     background-color: $primary-white-color;
-    /* position: relative; */
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -95,6 +103,7 @@
         &.is-open {
             display: flex;
             position: fixed;
+            z-index: 0;
             top: 0;
             right: 0;
             width: 100%;
