@@ -1,9 +1,9 @@
 .modal {
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate (-50%);
 
     width: 450px;
     height: 609px;
@@ -16,6 +16,10 @@
     @media screen and (min-width: $desktop) {
         width: 528px;
         height: 581px;
+        top: 50%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
     }
 
 }
