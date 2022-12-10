@@ -1,8 +1,4 @@
 .header {
-    
-    /* @media screen and (max-width: 767px) {
-        position: relative;
-    } */
 
     @media screen and (min-width: $tablet) {
         border-bottom: 1px solid $border-header-stroke;
@@ -119,7 +115,7 @@
             padding-right: 83px;
             flex-direction: column;
             justify-content: space-between;
-
+            overflow-y: scroll
         }
     }
 
