@@ -1,10 +1,9 @@
 .hero {
    
-    /* height: 400px; */
     padding: 0;
     margin-left: auto;
     margin-right: auto; 
-
+    background-color: $footer-bg-color;
     background-image: linear-gradient(to right, $gradient-hero, $gradient-hero), url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -26,6 +25,8 @@
     }
 
     @media screen and (min-width: $desktop) {
+        min-height: 600px;
+        background-size: 1600px;
         background-image: linear-gradient(to right, $gradient-hero, $gradient-hero), url(../images/hero-desktop.jpg);
 
 
