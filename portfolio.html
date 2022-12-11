@@ -112,7 +112,15 @@
                   <article class="project-card">
                      <a class="project-card__link" href="#">
                         <div class="project-card__thumb"> 
-                           <img class="project-card__pic" src="./images/project1.jpg" alt="лептоп на екрані якого картки працівників" width="370">
+                           <picture>
+                              <source srcset="./images/project1-450.webp 1x, ./images/project1-900.webp 2x" type="image/webp" media="(max-width: 767px)">
+                              <source srcset="./images/project1-450.jpg 1x, ./images/project1-900.jpg 2x" type="image/jpeg" media="(max-width: 767px)">
+                              <source srcset="./images/project1-354.webp 1x, ./images/project1-708.webp 2x" type="image/webp" media="(min-width: 768px)">
+                              <source srcset="./images/project1-354.jpg 1x, ./images/project1-708.jpg 2x" type="image/jpeg" media="(min-width: 768px)">
+                              <source srcset="./images/project1-370.webp 1x, ./images/project1-740.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                              <source srcset="./images/project1-370.jpg 1x, ./images/project1-740.jpg 2x" type="image/jpeg" media="(min-width: 1200px)">
+                           <img class="project-card__pic" src="./images/project1-370.jpg" alt="лептоп на екрані якого картки працівників" width="370">
+                           </picture>
                            <p class="project-card__descr">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                            вичерпні відомості про компанію чи приватну особу</p>
                         </div>
