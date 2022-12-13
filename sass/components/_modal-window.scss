@@ -17,6 +17,9 @@
     box-shadow: $modal-window-box-shadow;
     border-radius: $modal-window-border-radius;
 
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
 
     @media screen and (min-width: $desktop) {
         width: 528px;
@@ -45,6 +48,10 @@
     width: 370px;
 
     color: $secondary-text-color;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
 
     @media screen and (min-width: $desktop) {
         line-height: 1.15;
@@ -83,6 +90,10 @@
 
     &:hover, &:focus {
         border: 1px solid $accent-color;
+    }
+
+    @media screen and (max-width: 479px) {
+        max-width: 290px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -124,7 +135,9 @@
     &:hover, &:focus {
         border: 1px solid $accent-color;
     }
-
+    @media screen and (max-width: 479px) {
+        max-width: 290px;
+    }
     @media screen and (min-width: $desktop) {
         width: 448px;
     }
@@ -140,6 +153,9 @@
     font-size: 12px;
     line-height: 1.17;
 
+    @media screen and (max-width: 479px) {
+        max-width: 290px;
+    }
     @media screen and (min-width: $desktop) {
         width: 423px;
         font-size: 14px;

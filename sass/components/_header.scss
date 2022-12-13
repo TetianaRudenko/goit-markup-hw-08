@@ -1,9 +1,6 @@
 .header {
 
     border-bottom: 1px solid $border-header-stroke;
-    @media screen and (min-width: $tablet) {
-       
-    }
 }
 
 .header__main-nav {
@@ -12,6 +9,14 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+    }
 
     @media screen and (min-width: $tablet) {
         display: flex;

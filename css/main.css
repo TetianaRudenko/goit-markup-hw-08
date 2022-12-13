@@ -53,11 +53,22 @@ body.modal-open, body.menu-container {
 .header {
   border-bottom: 1px solid #ECECEC;
 }
+
 .header__main-nav {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 479px) {
+  .header__main-nav {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__main-nav {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__main-nav {
@@ -1300,6 +1311,11 @@ body.modal-open, body.menu-container {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 479px) {
+  .join-input {
+    max-width: 290px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join-input {
     width: 354px;
@@ -1346,6 +1362,11 @@ body.modal-open, body.menu-container {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1378,6 +1399,11 @@ body.modal-open, body.menu-container {
   text-align: center;
   width: 370px;
   color: #212121;
+}
+@media screen and (max-width: 479px) {
+  .modal__caption {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__caption {
@@ -1420,6 +1446,11 @@ body.modal-open, body.menu-container {
 .form-field__input:hover, .form-field__input:focus {
   border: 1px solid #2196F3;
 }
+@media screen and (max-width: 479px) {
+  .form-field__input {
+    max-width: 290px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-field__input {
     width: 448px;
@@ -1458,6 +1489,11 @@ body.modal-open, body.menu-container {
 .form-field__textarea:hover, .form-field__textarea:focus {
   border: 1px solid #2196F3;
 }
+@media screen and (max-width: 479px) {
+  .form-field__textarea {
+    max-width: 290px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-field__textarea {
     width: 448px;
@@ -1471,6 +1507,11 @@ body.modal-open, body.menu-container {
   height: 24px;
   font-size: 12px;
   line-height: 1.17;
+}
+@media screen and (max-width: 479px) {
+  .checkbox {
+    max-width: 290px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox {
