@@ -16,7 +16,7 @@
 }
 
 .features__item {
-    width: 450px;
+    max-width: 450px;
 
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
@@ -40,23 +40,26 @@
 }
 
 .features__thumb {
+    display: flex;
+    justify-content: center;
 
-    padding: 25px 190px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
 
     background-color: $secondary-background-color;
     border-radius: 4px;
 
     @media screen and (min-width: $tablet) {
-        display: block;
+        
         width: 354px;
-        padding: 25px 142px;
+        
     }
 
     @media screen and (min-width: $desktop) {
-        display: block;
+        
         width: 270px;
-        padding: 25px 100px; 
+        
     }
     
 }

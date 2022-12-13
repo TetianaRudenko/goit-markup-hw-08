@@ -34,16 +34,14 @@
 
 .employee__descr {
 
-    padding: 30px 122px 24px 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-
-    @media screen and (min-width: $tablet) {
-        padding: 30px 74px 24px 74px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding: 30px 32px;
-    }
+    
+    padding-top: 30px;
+    padding-bottom: 24px;
+        
 }
 
 .employee__id {
