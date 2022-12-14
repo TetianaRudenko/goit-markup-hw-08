@@ -1,5 +1,11 @@
 .social-set {
     display: flex;
+
+    @media screen and (max-width: 479px) {
+        /* width: 100%; */
+        flex-wrap: wrap;
+    }
+
     @media screen and (min-width: $tablet) {
         display: none;
     }

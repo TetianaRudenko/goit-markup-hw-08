@@ -62,7 +62,7 @@ body.modal-open, body.menu-container {
 }
 @media screen and (max-width: 479px) {
   .header__main-nav {
-    width: 320px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -440,6 +440,13 @@ body.modal-open, body.menu-container {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 479px) {
+  .social-set {
+    /* width: 100%; */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .social-set {
     display: none;
@@ -716,7 +723,7 @@ body.modal-open, body.menu-container {
 }
 @media screen and (max-width: 479px) {
   .container {
-    width: 320px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1271,7 +1278,7 @@ body.modal-open, body.menu-container {
 .join-input {
   margin-bottom: 20px;
   padding: 15px 16px;
-  width: 450px;
+  /* width: 450px; */
   height: 50px;
   background-color: inherit;
   border-radius: 4px;
@@ -1313,7 +1320,12 @@ body.modal-open, body.menu-container {
 }
 @media screen and (max-width: 479px) {
   .join-input {
-    max-width: 290px;
+    min-width: 290px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .join-input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1364,7 +1376,7 @@ body.modal-open, body.menu-container {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    width: 100%;
+    width: 95%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1436,7 +1448,6 @@ body.modal-open, body.menu-container {
 
 .form-field__input {
   padding: 11px 12px 11px 42px;
-  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1448,7 +1459,12 @@ body.modal-open, body.menu-container {
 }
 @media screen and (max-width: 479px) {
   .form-field__input {
-    max-width: 290px;
+    min-width: 290px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form-field__input {
+    width: 370px;
   }
 }
 @media screen and (min-width: 1200px) {

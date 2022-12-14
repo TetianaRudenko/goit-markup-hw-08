@@ -18,7 +18,7 @@
     border-radius: $modal-window-border-radius;
 
     @media screen and (max-width: 479px) {
-        width: 100%;
+        width: 95%;
     }
 
     @media screen and (min-width: $desktop) {
@@ -81,7 +81,7 @@
 .form-field__input {
 
     padding: 11px 12px 11px 42px;
-    width: 370px;
+    
     height: 40px;
 
     border: $modal-input-border;
@@ -92,8 +92,13 @@
         border: 1px solid $accent-color;
     }
 
+    
     @media screen and (max-width: 479px) {
-        max-width: 290px;
+        min-width: 290px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: 370px;
     }
 
     @media screen and (min-width: $desktop) {
